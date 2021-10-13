@@ -1,4 +1,4 @@
-## Hi there 👋
+## Want to test your blood 🩸? Hello 👋
 
 imaware is an at-home blood testing company based in Austin, TX
 
