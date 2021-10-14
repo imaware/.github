@@ -22,6 +22,17 @@
       "commitMessageTopic": "{{{depName}}}",
       "semanticCommitType": "chore",
       "automerge": true
+    },
+    {
+      "description": "Docker update",
+      "dependencyDashboardApproval": true,
+      "matchDatasources": ["docker"],
+      "labels": ["docker-update"]
+    },
+    {
+      "aliases": {
+        "stable": "https://charts.helm.sh/stable"
+      }
     }
   ]
 }
