@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "assignees": ["bloodbot"],
+  "automergeType": "branch",
+  "prCreation": "not-pending",
+  "stabilityDays": 3,
+  "prConcurrentLimit": 5,
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "description": "Automerge major updates",
+      "matchUpdateTypes": ["major"],
+      "commitMessageTopic": "{{{depName}}}",
+      "semanticCommitType": "chore",
+      "automerge": true
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance", "pin"],
+      "commitMessageTopic": "{{{depName}}}",
+      "semanticCommitType": "chore",
+      "automerge": true
+    }
+  ]
+}
