@@ -28,11 +28,6 @@
       "dependencyDashboardApproval": true,
       "matchDatasources": ["docker"],
       "labels": ["docker-update"]
-    },
-    {
-      "aliases": {
-        "stable": "https://charts.helm.sh/stable"
-      }
     }
   ]
 }
