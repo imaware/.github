@@ -15,6 +15,13 @@
       "commitMessageTopic": "{{{depName}}}",
       "semanticCommitType": "chore",
       "automerge": true
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "digest", "lockFileMaintenance", "pin"],
+      "commitMessageTopic": "{{{depName}}}",
+      "semanticCommitType": "chore",
+      "automerge": true
     }
   ]
 }
