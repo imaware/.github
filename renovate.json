@@ -27,6 +27,7 @@
   "packageRules": [
     {
       "description": "Automerge major updates",
+      "dependencyDashboardApproval": true,
       "matchUpdateTypes": ["major"],
       "commitMessageTopic": "{{{depName}}}",
       "semanticCommitType": "chore",
@@ -47,6 +48,7 @@
     },
     {
       "postUpgradeTasks": {
+        "matchUpdateTypes": ["major"],
         "commands": ["yarn lint:fix"],
         "fileFilters": ["yarn.lock", "**/*.js"],
         "executionMode": "update"
