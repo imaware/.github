@@ -15,6 +15,13 @@
         "registryUrl=(?<registryUrl>.*?)\n *chart: (?<depName>.*?)\n *version: (?<currentValue>.*)\n"
       ],
       "datasourceTemplate": "helm"
+    },
+    {
+      "description": "Update version: variables in workflows",
+      "fileMatch": ["^\\.github\\/workflows\\/[^/]+\\.ya?ml$"],
+      "matchStrings": [
+        "\\s+version: (?<currentValue>.+?) #renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>.+?)(?: lookupName=(?<lookupName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\s"
+      ]
     }
   ],
   "packageRules": [
@@ -37,6 +44,13 @@
       "dependencyDashboardApproval": true,
       "matchDatasources": ["docker"],
       "labels": ["docker-update"]
+    },
+    {
+      "postUpgradeTasks": {
+        "commands": ["yarn lint:fix"],
+        "fileFilters": ["yarn.lock", "**/*.js"],
+        "executionMode": "update"
+      }
     }
   ]
 }
