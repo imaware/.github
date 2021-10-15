@@ -47,8 +47,8 @@
       "labels": ["docker-update"]
     },
     {
+      "matchUpdateTypes": ["major"],
       "postUpgradeTasks": {
-        "matchUpdateTypes": ["major"],
         "commands": ["yarn lint:fix"],
         "fileFilters": ["yarn.lock", "**/*.js"],
         "executionMode": "update"
