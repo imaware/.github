@@ -27,6 +27,7 @@
   "packageRules": [
     {
       "description": "Automerge major updates",
+      "dependencyDashboardApproval": true,
       "matchUpdateTypes": ["major"],
       "commitMessageTopic": "{{{depName}}}",
       "semanticCommitType": "chore",
