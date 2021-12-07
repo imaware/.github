@@ -8,6 +8,10 @@
   "stabilityDays": 3,
   "prConcurrentLimit": 5,
   "dependencyDashboard": true,
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "assignees": ["@bloodbot"]
+  }
   "regexManagers": [
     {
       "fileMatch": ["charts/.+helm-release\\.yaml$"],
