@@ -33,6 +33,11 @@
       "matchPackageNames": ["faker"],
       "allowedVersions": "<=5.5.3"
     },
+     {
+      "matchPackageNames": ["marked"],
+      "matchDepTypes": ["peerDependencies"],
+      "allowedVersions": ">=4.0.10"
+    },
     {
       "description": "Automerge major updates",
       "dependencyDashboardApproval": true,
