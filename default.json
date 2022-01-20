@@ -58,14 +58,6 @@
       "dependencyDashboardApproval": true,
       "matchDatasources": ["docker"],
       "labels": ["docker-update"]
-    },
-    {
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest", "lockFileMaintenance", "rollback", "bump"],
-      "postUpgradeTasks": {
-        "commands": ["yarn lint:fix"],
-        "fileFilters": ["yarn.lock", "**/*.js"],
-        "executionMode": "update"
-      }
     }
   ]
 }
