@@ -30,8 +30,8 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["faker"],
-      "allowedVersions": "<=5.5.3"
+      "matchPackageNames": ["@sentry/browser"],
+      "allowedVersions": =6.17.7"
     },
      {
       "matchPackageNames": ["marked"],
