@@ -33,6 +33,10 @@
       "matchPackageNames": ["@sentry/browser"],
       "allowedVersions": "=6.17.7"
     },
+    {
+      "matchPackageNames": ["faker"],
+      "allowedVersions": "<=5.5.3"
+    },
      {
       "matchPackageNames": ["marked"],
       "matchDepTypes": ["peerDependencies"],
