@@ -31,7 +31,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["@sentry/browser"],
-      "allowedVersions": =6.17.7"
+      "allowedVersions": "=6.17.7"
     },
      {
       "matchPackageNames": ["marked"],
