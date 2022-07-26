@@ -14,6 +14,7 @@
     "prCreation": "immediate",
     "stabilityDays": 0
   },
+  "allowedPostUpgradeCommands": ["yarn lint:fix"],
   "regexManagers": [
     {
       "fileMatch": ["charts/.+helm-release\\.yaml$"],
