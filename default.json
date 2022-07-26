@@ -10,7 +10,9 @@
   "dependencyDashboard": true,
   "vulnerabilityAlerts": {
     "labels": ["security"],
-    "assignees": ["@bloodbot"]
+    "assignees": ["@bloodbot"],
+    "prCreation": "immediate",
+    "stabilityDays": 0
   },
   "regexManagers": [
     {
