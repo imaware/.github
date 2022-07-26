@@ -44,11 +44,10 @@
     },
     {
       "description": "Automerge major updates",
-      "dependencyDashboardApproval": true,
       "matchUpdateTypes": ["major"],
       "commitMessageTopic": "{{{depName}}}",
       "semanticCommitType": "chore",
-      "automerge": true
+      "automerge": false
     },
     {
       "description": "Automerge non-major updates",
