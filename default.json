@@ -64,5 +64,10 @@
       "matchDatasources": ["docker"],
       "labels": ["docker-update"]
     }
-  ]
+  ],
+  "postUpgradeTasks": {
+    "commands": ["yarn lint:fix"],
+    "fileFilters": ["yarn.lock", "package.json"],
+    "executionMode": "update"
+  }
 }
