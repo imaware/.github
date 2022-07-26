@@ -14,7 +14,6 @@
     "prCreation": "immediate",
     "stabilityDays": 0
   },
-  "allowedPostUpgradeCommands": ["yarn lint:fix"],
   "regexManagers": [
     {
       "fileMatch": ["charts/.+helm-release\\.yaml$"],
@@ -65,10 +64,5 @@
       "matchDatasources": ["docker"],
       "labels": ["docker-update"]
     }
-  ],
-  "postUpgradeTasks": {
-    "commands": ["yarn lint:fix"],
-    "fileFilters": ["yarn.lock", "package.json"],
-    "executionMode": "update"
-  }
+  ]
 }
