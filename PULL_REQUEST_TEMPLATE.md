@@ -1,12 +1,33 @@
-## Description
 
 ## Story or defect related
+## Description
 
-## Types of changes
+Please include a summary of the changes and the related issue.
 
-What types of changes does your code introduce? Put an `x` in all the boxes that apply:
+### Type of change
 
-- [ ] Config (configuration change)
+Please delete options that are not relevant.
+
+- [ ] Test fix (change that only affects tests)
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to change)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Configuration (configuration change that isn't related to application code)
+- [ ] This change requires a documentation update
+
+## Does add additional tests?
+
+- [ ] Yes
+- [ ] No
+
+
+## Definition of Done Checklist:
+
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation and diagrams ([miro](https://miro.com/))
+- [ ] My changes generate no new warnings
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass locally with my changes
+- [ ] I have made corresponding config changes and update [apps](https://github.com/imaware/apps) if applicable
